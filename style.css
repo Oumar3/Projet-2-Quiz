@@ -76,3 +76,39 @@ box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     background: #fff;
 box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
+
+
+.results {
+    padding: 20px;
+    margin: 10px 0px 70px;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.2);
+    background: #fff;
+  }
+  .results h2 {
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+  }
+  .results h2 span {
+    font-weight: 700;
+  }
+  .results h2, .help {
+    text-align: center;
+  }
+  .help, .mark {
+    display: none;
+    margin-top: 20px;
+  }
+  .help {
+    font-size: 20px;
+  }
+  .mark {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  .mark span {
+    font-weight: 700;
+  }
