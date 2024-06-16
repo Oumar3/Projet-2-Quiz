@@ -18,9 +18,11 @@ function handleForm(e){
     })
 
     showResultat(results);
+    colorQuestion(results)
 }
 
 let titleResult = document.querySelector('.results h2');
+let titleResul = document.querySelector('.results');
 let markResult = document.querySelector('.mark');
 let helpResult = document.querySelector('.help');
 
@@ -31,6 +33,7 @@ function showResultat(resultat){
   switch (errorsNumber) {
     case 0:
       titleResult.textContent = `✔️ Bravo, c'est un sans faute ! ✔️`;
+      titleResul.style.backgroundImage = "linear-gradient(to right, #a8ff78, #78ffd6)"
       helpResult.textContent = "Quelle culture ...";
       helpResult.style.display = "block";
       markResult.innerHTML = `Score : <span> ${trueNumber}/ ${resultat.length}</span>`;
@@ -82,3 +85,14 @@ function showResultat(resultat){
   }
 }
 
+let question = document.querySelectorAll('.question-block')
+
+function colorQuestion(results){
+    results.forEach((q,index)=>{
+        if(results[index]){
+            question[index].style.backgroundImage = "linear-gradient(to right, #a8ff78, #78ffd6)"
+        }else{
+            question[index].style.backgroundImage = "linear-gradient(to right, #f5567b, #fd674c)"
+        }
+    })
+}
